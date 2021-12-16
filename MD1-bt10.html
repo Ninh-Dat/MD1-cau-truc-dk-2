@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="rn"></p>
+<script>
+    let soDien = +prompt('Số điện', '')
+    let tienDien;
+    let b1 =1.678;
+    let b2 =1.734;
+    let b3 =2.014;
+    let b4 =2.536;
+    let b5 =2.834;
+    let b6 =2.927;
+
+    if (soDien <=0 )
+    {
+        document.getElementById('rn').innerHTML='Số điện không hợp lệ vui lòng nhập đúng'
+    }
+    else if (soDien <= 50)
+    {
+        tienDien = soDien *b1;
+        document.getElementById('rn').innerHTML = 'Số tiền điện phải trả là = '+tienDien;
+    }
+    else if (soDien <=100)
+    {
+        tienDien=50*b1+((soDien-50)*b2);
+        document.getElementById('rn').innerHTML = 'Số tiền điện phải trả là = '+tienDien;
+    }
+    else if (soDien <= 200)
+    {
+        tienDien=50*b1+(50*b2)+((soDien-100)*b3);
+        document.getElementById('rn').innerHTML = 'Số tiền điện phải trả là = '+tienDien;
+    }
+    else if (soDien <= 300)
+    {
+        tienDien=50*b1+(50*b2)+(100*b3)+((soDien-200)*b4);
+        document.getElementById('rn').innerHTML = 'Số tiền điện phải trả là = '+tienDien;
+    }
+    else if (soDien <= 400)
+    {
+        tienDien=50*b1+(50*b2)+(100*b3)+(100*b4)+((soDien-300)*b5);
+        document.getElementById('rn').innerHTML = 'Số tiền điện phải trả là = '+tienDien;
+    }
+    else if (soDien > 400)
+    {
+        tienDien=50*b1+(50*b2)+(100*b3)+(100*b4)+(100*b5)+((soDien-400)*b6);
+        document.getElementById('rn').innerHTML = 'Số tiền điện phải trả là = '+tienDien;
+    }
+
+</script>
+</body>
+</html>

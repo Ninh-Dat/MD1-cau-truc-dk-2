@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="rn"></p>
+<script>
+    let soLuong = +prompt('', '')
+    let thue;
+    let b1 =0;
+    let b2 =0.1;
+    let b3 =0.15;
+    let b4 =0.2;
+    let b5 =0.25;
+    let b6 =0.3;
+    let b7 =0.35;
+
+    if (soLuong <=5.000000 )
+    {
+        thue= soLuong * b1;
+        document.getElementById('rn').innerHTML='Thuế phải đóng là = '+thue
+    }
+    else if (soLuong <= 10.000000)
+    {
+        thue = (soLuong * b2 );
+        document.getElementById('rn').innerHTML='Thuế phải đóng là = '+thue
+    }
+    else if (soLuong <= 18.000000)
+    {
+        thue = (soLuong * b3 );
+        document.getElementById('rn').innerHTML='Thuế phải đóng là = '+thue
+    }
+    else if (soLuong <= 32.000000)
+    {
+        thue = (soLuong * b4 );
+        document.getElementById('rn').innerHTML='Thuế phải đóng là = '+thue
+    }
+    else if (soLuong <= 52.000000)
+    {
+        thue = (soLuong * b5 );
+        document.getElementById('rn').innerHTML='Thuế phải đóng là = '+thue
+    }
+    else if (soLuong <= 80.000000)
+    {
+        thue = (soLuong * b6 );
+        document.getElementById('rn').innerHTML='Thuế phải đóng là = '+thue
+    }
+    else if (soLuong > 80.000000)
+    {
+        thue = (soLuong * b7 );
+        document.getElementById('rn').innerHTML='Thuế phải đóng là = '+thue
+    }
+
+</script>
+</body>
+</html>
